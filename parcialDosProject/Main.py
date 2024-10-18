@@ -24,8 +24,8 @@ def operaciones(nivel_desempeno, cargo, salario):
     return nivel_desempeno, cargo, salario, bonificacion, total_recibir
 
 def generar_mensaje(cargo, nivel_desempeno, salario, total_recibir, bonificacion):
-    return (f"Cargo: {cargo}\n"
-            f"Nivel de desempeno: {nivel_desempeno}\n"
+    return (f"Cargo: {cargo.capitalize()}\n"
+            f"Nivel de desempeno: {nivel_desempeno.capitalize()}\n"
             f"Salario Base: ${salario}\n"
             f"Bonificación: ${bonificacion}\n"
             f"Total a Recibir: ${total_recibir}\n")
